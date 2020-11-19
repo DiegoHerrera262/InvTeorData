@@ -5,7 +5,12 @@
 ################################################################################
 #                              Install anaconda                                #
 ################################################################################
-sudo apt_get update
+sudo apt-get update
+sudo apt-get install tmux
+sudo apt-get install build-essential
+sudo apt-get install git
+sudo apt install make
+sudo apt install vim
 sudo apt-get install curl
 cd /tmp
 # Download appropriate version of anaconda
