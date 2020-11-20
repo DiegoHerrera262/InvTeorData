@@ -111,7 +111,7 @@ def GenData(mus, hs, si=4):
                    'Start pushing results'
     client.messages.create(body=init_message,
                            from_ = server_num,
-                           to = myphone)
+                           to = 'whatsapp:+57'+myphone)
 
 
 def PlotMagsProfile(filepath,fitparams,use_fit = True):
