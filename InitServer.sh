@@ -33,6 +33,6 @@ source ~/.bashrc
 #                          Create local environment                            #
 ################################################################################
 conda create --name Datagen
-conda deactivate base
+conda deactivate
 conda activate Datagen
 pip install twilio
