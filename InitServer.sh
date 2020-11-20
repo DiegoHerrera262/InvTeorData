@@ -8,12 +8,12 @@
 #sudo apt-get update
 #sudo apt-get install build-essential
 #sudo apt-get install tmux
-#sudo apt-get install curl
-#cd /tmp
+sudo apt-get install curl
+cd /tmp
 # Download appropriate version of anaconda
-#curl https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh --output anaconda.sh
+curl https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh --output anaconda.sh
 # I go irresponsibly not checking the .sh file
-#bash anaconda.sh
+bash anaconda.sh
 ################################################################################
 #                         Create env vars for twilio                           #
 ################################################################################
