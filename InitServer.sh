@@ -29,6 +29,7 @@ echo "$settwacc" >> ~/.bashrc
 echo "$settwauth" >> ~/.bashrc
 # Activate environment
 source ~/.bashrc
+source ~/.bashrc
 ################################################################################
 #                          Create local environment                            #
 ################################################################################
