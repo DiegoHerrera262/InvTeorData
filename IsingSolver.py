@@ -12,7 +12,7 @@ import os
 # Import of the module I wrote for MCMC Simulation
 import IsingModel as Alloy
 # Set matplotlib style for plotting
-plt.style.use('FigureStyle/PaperStyle.mplstyle')
+# plt.style.use('FigureStyle/PaperStyle.mplstyle')
 
 client = Client()
 myphone = os.environ['MYPHONE']
