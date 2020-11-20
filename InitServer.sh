@@ -39,4 +39,3 @@ conda create --name Datagen
 conda deactivate base
 conda activate Datagen
 pip install twilio
-cd ~/DATAGEN
