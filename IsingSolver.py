@@ -137,7 +137,7 @@ if __name__ == '__main__':
     #fitparams = []
     #PlotMagsProfile('Mags_1_1.csv',fitparams,use_fit=False)
 
-    mu = [0.0,-10.0]
-    hs = [0.0,0.1]
+    mu = [0.0,-0.7,-10.0]
+    hs = [0.0,0.1,0.3,0.5]
 
-    GenData(mu,hs,si=2)
+    GenData(mu,hs,si=45)
