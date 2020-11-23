@@ -1,0 +1,4 @@
+axes.formatter.limits : -3,3
+axes.titlesize : 24
+text.usetex : True
+font.family : serif
