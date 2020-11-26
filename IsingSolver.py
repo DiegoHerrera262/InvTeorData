@@ -104,7 +104,7 @@ def GenData(mus, hs, si=4):
 
     # Create dataframe for saving fit parameters
     fitsframe = pd.DataFrame.from_dict(fits)
-    fitsframe.to_csv('FitParams.csv',index=False,header=True)
+    fitsframe.to_csv('FitParams1.csv',index=False,header=True)
     # Send finishing message
     server_num = 'whatsapp:+14155238886'
     init_message = 'Finished Cooking Batch...\n' +\
