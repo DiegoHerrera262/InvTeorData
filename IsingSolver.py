@@ -93,11 +93,7 @@ def GenData(mus, hs, si=4):
     for i in range(len(mus)):
         for j in range(len(hs)):
             myk = str(i)+'_'+str(j)
-<<<<<<< HEAD
             fname = 'Alt_Mags_'+myk
-=======
-            fname = 'Alt3_Mags_'+myk
->>>>>>> d230d5f1944b4b539592aa2bcb5b78842fcb7639
             # Compute magnetisation profile, save and returns
             # interpolation data
             fitdata = SaveMagsProfile(\
@@ -144,9 +140,4 @@ if __name__ == '__main__':
 
     mu = [0.0]
     hs = [0.0]
-
-<<<<<<< HEAD
     GenData(mu,hs,si=55)
-=======
-    GenData(mu,hs,si=32)
->>>>>>> d230d5f1944b4b539592aa2bcb5b78842fcb7639
