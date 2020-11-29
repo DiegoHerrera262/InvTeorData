@@ -301,17 +301,17 @@ class IsingLattice2D:
     def ThermalAnime(self, T = 0.1, MCSTEPS = 15000, Filename = 'Demo', \
     save = False):
         fig = plt.figure()
-        ims = [None]*(MCSTEPS//10)
+        ims = [None]*(MCSTEPS//300)
         beta = 1.0/T
         for i in range(MCSTEPS):
             self.LatticeMCStep(beta)
-            if i%10 == 0:
+            if i%300 == 0:
                 im = plt.imshow(self.Lattice2img(), cmap = 'gray', \
                 animated = True)
-                ims[i//10] = [im]
+                ims[i//300] = [im]
         ani = animation.ArtistAnimation(fig, ims, interval=1, blit=True, \
         repeat_delay=100)
-        plt.title(r'Thermalisation of System')
+        plt.title(r'Thermalisation of System'+'\n'+r'$T = $ '+str(T))
         plt.show()
         if save:
             ani.save(Filename+'.gif', writer='imagemagick')
