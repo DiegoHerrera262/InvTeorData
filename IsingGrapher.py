@@ -22,9 +22,9 @@ def PlotMagsProfile(filepath,fitparams,use_fit = True):
     if use_fit:
         plt.plot(x,y)
     plt.xlabel(r'$k_BT/Jz$')
-    plt.ylabel(r'$\rangle |M| \langle$')
+    plt.ylabel(r'$\langle |M| \rangle$')
     plt.show()
 
 if __name__ == '__main__':
     fitparams = []
-    PlotMagsProfile('Data/Mags_0_3.csv',fitparams,use_fit=False)
+    PlotMagsProfile('Data/Alt_Mags_0_0.csv',fitparams,use_fit=False)
