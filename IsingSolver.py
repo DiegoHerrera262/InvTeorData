@@ -93,18 +93,18 @@ def GenData(mus, hs, si=4):
     for i in range(len(mus)):
         for j in range(len(hs)):
             myk = str(i)+'_'+str(j)
-            fname = 'Alt3_Mags_'+myk
+            fname = 'Alt0_Mags_'+myk
             # Compute magnetisation profile, save and returns
             # interpolation data
             fitdata = SaveMagsProfile(\
-            s=si,miu=mus[i],hi=hs[j],points=30,filename=fname,\
+            s=si,miu=mus[i],hi=hs[j],points=70,filename=fname,\
             to_num=myphone)
             # Save interpolation data to file for reference later
             fits[myk] = fitdata
 
     # Create dataframe for saving fit parameters
     fitsframe = pd.DataFrame.from_dict(fits)
-    fitsframe.to_csv('FitParams3.csv',index=False,header=True)
+    fitsframe.to_csv('FitParamsT.csv',index=False,header=True)
     # Send finishing message
     server_num = 'whatsapp:+14155238886'
     init_message = 'Finished Cooking Batch...\n' +\
@@ -137,8 +137,11 @@ if __name__ == '__main__':
     #fitparams = []
     #PlotMagsProfile('Mags_1_1.csv',fitparams,use_fit=False)
     # mu1 = [0.0,-0.7]
+    
+    # mu = [0.0,-1.7]
+    # hs = [0.0,0.1,0.3,0.5]
+    
+    mu = [0.0]
+    hs = [0.0]
 
-    mu = [0.0,-1.7]
-    hs = [0.0,0.1,0.3,0.5]
-
-    GenData(mu,hs,si=32)
+    GenData(mu,hs,si=55)
