@@ -99,7 +99,7 @@ class IsingLattice2D:
 
         dS = next_spin - self.Lattice[idx]
         s = next_spin + self.Lattice[idx]
-        sig = -1 if idx >= self.LatticeSize else 1
+        sig = -1 if idx >= self.LatticeSize**2 else 1
         return dS*(-0.5*sum(self.Lattice[k] for k in self.Neighbours[idx])+\
                 self.h*sig + self.mu*s)
 
